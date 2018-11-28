@@ -11,10 +11,10 @@
 <body>
   <div id="bg" style="width:8000px; height:1000px; background:white; border:2px solid black; margin: 2px;">
     <img id="player1" class="solid player" src="player_-wooden-armor-pixilart.png" style="position:absolute;" width=56 height=56>
-    <img id="enemy1" class="solid enemy" src="neverwinter-wars-testenemy1-pixilart.png" style="position:absolute; left:1100px; top:250px"width=80 height=80>
-    <img id="enemy2" class="solid enemy" src="magic-carpet-animation-pixilart.gif" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
-    <img id="enemy3" class="solid enemy" src="pixil-frame-0 (1).png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
-    <img id="enemy4" class="solid enemy" src="dasher-pixilart (1).png" style="position:absolute; left: 3700px; top: 600px"width=23px height=21px>
+    <img id="enemy1" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:1100px; top:250px"width=80 height=80>
+    <img id="enemy2" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
+    <img id="enemy3" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
+    <img id="enemy4" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left: 3700px; top: 600px"width=23px height=21px>
     <div class="plat solid" style="top:330px; left:250px; width:300px; height:30px;"></div>
     <div class="plat solid" style="top:350px; left:600px; width:160px; height:30px;"></div>
     <div class="plat solid" style="top:450px; left:900px; width:400px; height:30px;"></div>
@@ -156,6 +156,10 @@
         let enemy2 = new Enemy(1500, 100, "enemy2");
         let enemy3 = new Enemy(1000, 100, "enemy3");
         let enemy4 = new Enemy(3700, 60, "enemy4");
+        enemy1.hp = 50;
+        enemy2.hp = 50;
+        enemy3.hp = 50;
+        enemy4.hp = 50;
     
         let LEFT_KEY = 37;
         let UP_KEY = 38;
