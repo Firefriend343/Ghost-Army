@@ -10,7 +10,7 @@
   </head>
 <body>
   <div id="bg" style="width:8000px; height:1000px; background:white; border:2px solid black; margin: 2px;">
-    <img id="player1" class="solid player" src="ghost-fighter-player-stage-1-pixilart(1).png" style="position:absolute;" width=56 height=56>
+    <img id="player1" class="solid player" src="ghost-fighter-player-stage-1-pixilart (1).png" style="position:absolute;" width=56 height=56>
     <img id="enemy1" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:1100px; top:250px"width=80 height=80>
     <img id="enemy2" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
     <img id="enemy3" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
@@ -93,10 +93,10 @@
                // Tried to jump but can't right now.
             } else if (this.command == "attack" && this.state != "attacking") {
               this.element.src = "ghost-fighter-player-stage-2-pixilart(1).gif";
-              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart(1).png";  }, 50);
-              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-2-pixilart(1).gif"; player1.states = "normal"; }, 100);
-              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart(1).png"; player1.states = "normal"; }, 150);
-              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart(1).png"; player1.states = "normal"; }, 200);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart (1).png";  }, 50);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-2-pixilart (1).gif"; player1.states = "normal"; }, 100);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart (1).png"; player1.states = "normal"; }, 150);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart (1).png"; player1.states = "normal"; }, 200);
               let victim_el = collision(this.x + this.width +5, this.y + this.height/2, this, "enemy",5 ,5);
               if (this.facing == -1) {
                 victim_el = collision(this.x - 10, this.y + this.height/2, this, "enemy", 5 ,5);
