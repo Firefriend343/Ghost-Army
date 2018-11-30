@@ -10,7 +10,7 @@
   </head>
 <body>
   <div id="bg" style="width:8000px; height:1000px; background:white; border:2px solid black; margin: 2px;">
-    <img id="player1" class="solid player" src="player_-wooden-armor-pixilart.png" style="position:absolute;" width=56 height=56>
+    <img id="player1" class="solid player" src="ghost-fighter-player-stage-1-pixilart(1).png" style="position:absolute;" width=56 height=56>
     <img id="enemy1" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:1100px; top:250px"width=80 height=80>
     <img id="enemy2" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
     <img id="enemy3" class="solid enemy" src="ghost-warrior-pixilart.png" style="position:absolute; left:2800px; top:250px"width=40px height=40px>
@@ -92,11 +92,11 @@
             } else if (this.command == "jump") {
                // Tried to jump but can't right now.
             } else if (this.command == "attack" && this.state != "attacking") {
-              this.element.src = "attack1_-wooden-armor-pixilart.png";
-              window.setTimeout(function () { player1.element.src = "player1_-wooden-armor-pixilart.png";  }, 50);
-              window.setTimeout(function () { player1.element.src = "attack1_-wooden-armor-pixilart (1).png"; player1.states = "normal"; }, 100);
-              window.setTimeout(function () { player1.element.src = "player1_-wooden-armor-pixilart.png"; player1.states = "normal"; }, 150);
-              window.setTimeout(function () { player1.element.src = "player_-wooden-armor-pixilart (1).png"; player1.states = "normal"; }, 200);
+              this.element.src = "ghost-fighter-player-stage-2-pixilart(1).gif";
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart(1).png";  }, 50);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-2-pixilart(1).gif"; player1.states = "normal"; }, 100);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart(1).png"; player1.states = "normal"; }, 150);
+              window.setTimeout(function () { player1.element.src = "ghost-fighter-player-stage-1-pixilart(1).png"; player1.states = "normal"; }, 200);
               let victim_el = collision(this.x + this.width +5, this.y + this.height/2, this, "enemy",5 ,5);
               if (this.facing == -1) {
                 victim_el = collision(this.x - 10, this.y + this.height/2, this, "enemy", 5 ,5);
@@ -170,15 +170,15 @@
           if (e.keyCode == LEFT_KEY) {
             console.log("left");
             player1.command = "go left";
-            alert ("Welcome to the tutorial! First of all, please do not use the arrow keys to move. You should use the WASD keys, W to go up, A to go left, D to go right, and S does not do anything. The attack key is the spacebar. If you have any questions or feedback, please go to our online survey on Google Classroom and post it. Thx");
+            alert ("Welcome to the tutorial! First of all, please do not use the arrow keys to move. You should use the WASD keys, W to go up, A to go left, D to go right, and S does not do anything. The attack key is the K key. If you have any questions or feedback, please go to our online survey on Google Classroom and post it. Thx");
           } else if (e.keyCode == RIGHT_KEY) {
             console.log("right");
             player1.command = "go right";
-            alert ("Welcome to the tutorial! First of all, please do not use the arrow keys to move. You should use the WASD keys, W to go up, A to go left, D to go right, and S does not do anything. The attack key is the spacebar. If you have any questions or feedback, please go to our online survey on Google Classroom and post it. Thx");
+            alert ("Welcome to the tutorial! First of all, please do not use the arrow keys to move. You should use the WASD keys, W to go up, A to go left, D to go right, and S does not do anything. The attack key is the K key. If you have any questions or feedback, please go to our online survey on Google Classroom and post it. Thx");
           } else if (e.keyCode == UP_KEY && player1.dy > -1 && player1.dy < 1) {
             console.log("up");
             player1.command = "jump";
-            alert ("Welcome to the tutorial! First of all, please do not use the arrow keys to move. You should use the WASD keys, W to go up, A to go left, D to go right, and S does not do anything. The attack key is the spacebar. If you have any questions or feedback, please go to our online survey on Google Classroom and post it. Thx");
+            alert ("Welcome to the tutorial! First of all, please do not use the arrow keys to move. You should use the WASD keys, W to go up, A to go left, D to go right, and S does not do anything. The attack key is the K key. If you have any questions or feedback, please go to our online survey on Google Classroom and post it. Thx");
           }
           if (e.key == "a") {
             console.log("a");
